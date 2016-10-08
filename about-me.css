@@ -30,7 +30,7 @@ img {
 }
 
 h2 {
-  padding: 0.2em 0;
+  padding: 0.5em 0;
 }
 
 .accordions {
@@ -79,8 +79,8 @@ h2 {
 }
 
 h3 {
-    margin-top: 0.5em;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .reference {
@@ -206,7 +206,7 @@ h3 {
     content: '';
     position: absolute;
     top: 16px;
-    right: 100%;
+    right: 100.3%;
     height: 0;
     width: 0;
     border: 7px solid transparent;
@@ -287,7 +287,7 @@ h3 {
   }
   .cd-timeline-content::before {
     top: 24px;
-    left: 100%;
+    left: 100.5%;
     border-color: transparent;
     /*border-left-color: white;*/
   }
@@ -316,7 +316,7 @@ h3 {
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
     left: auto;
-    right: 100%;
+    right: 100.5%;
     /*border-color: transparent;*/
     /*border-right-color: white;*/
   }

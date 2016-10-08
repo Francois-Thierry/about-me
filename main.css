@@ -49,7 +49,7 @@ a {
 }
 
 p { 
-    float: left;
+    /*float: left;*/
     font-family: "adobe-caslon-pro", georgia, serif;
     font-size: 0.9em;
     line-height: 1.2;
@@ -108,7 +108,7 @@ h3 {
   .column-12 { width: 100%; }
   .wrapper {
     width: 95%;
-    max-width: 1170px;
+    max-width: 1025px;
   }
   h1 {
     font-size: 2em;
