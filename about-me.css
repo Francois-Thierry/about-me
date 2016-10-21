@@ -29,12 +29,20 @@ img {
   margin-top: 1em;
 }
 
+.title h1 {
+  margin-bottom: 0.5em;
+}
+
 h2 {
   padding: 0.5em 0;
 }
 
 .accordions {
   margin-bottom: 3em;
+}
+
+a, i, b {
+  background: transparent;
 }
 
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -159,6 +167,9 @@ h3 {
   padding: 1em;
   box-shadow: 3px 4px 0 #d7e4ed;
 }
+.cd-timeline-content > * {
+  background: white;
+}
 .cd-timeline-content:after {
   content: "";
   display: table;
@@ -177,24 +188,36 @@ h3 {
 /*                                                       Responsive Section  */
 /*///////////////////////////////////////////////////////////////////////////*/
 
+@media (min-width:481px) {
+  .title {
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+  #title {
+    /*margin-top: 3em;*/
+    margin-bottom: 2em;
+  }
+}
+
 @media (min-width:641px) { 
   img {
     float: left;
+    display: inline;
+    vertical-align:bottom;
     max-height: 180px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
   }
-  .title {
-    margin-bottom: 2em;
-    margin-top: 2em;
+  .title h1 {
+    margin-bottom: 0.5em;
   }
   #title {
     float: left;
     text-align: left;
     margin-left: 2em;
-    margin-bottom: 1em;
-    margin-top: 4em;
+/*    margin-bottom: 1em;
+    margin-top: 4em;*/
   }
   #cd-timeline::before {
     display: block;
@@ -215,8 +238,9 @@ h3 {
   .cd-timeline-content {
     margin-left: 60px;
   }
-  .reference, .reference i {
+  i {
     font-size: 1em;
+    background: transparent;
   }
 }
 

@@ -3,11 +3,13 @@
 <html lang="en"class="no-js">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>François Thierry</title>
 
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="../main.css">
   <link rel="stylesheet" href="about-me.css">
+
+  <script src="../external/jquery-3.1.0.min.js"></script>
 
 </head>
 <body>
@@ -19,7 +21,7 @@
 
   <div class="row title">
     <div class="column-12">
-        <img src="photo.jpg">
+        <img src="photo.png">
         <div id="title">        
           <h1>François Thierry</h1>
           <i>MEng - MSc - PhD</i>
@@ -191,8 +193,36 @@ The main goals of my research were to calculate the unique properties of quantum
   
     </div>
 </div>
-  <script src="external/jquery-3.1.0.min.js"></script>
-  <script src="about-me.js"></script>
+  <script type="text/javascript">
+  
+    $("#CV-link.box-toggle").on('click', function () {
+      if ($('div.publications-content').hasClass('active')) {
+        $('div.publications-content').slideToggle(800);
+        $('div.publications-content').removeClass('active');
+      }
+        $('div.CV-content').slideToggle(1000);
+        $('html, body').animate({scrollTop:$("#CV-link").offset().top+4}, 1000);
+        if ($('div.CV-content').hasClass('active')) {
+        $('div.CV-content').removeClass('active');
+      } else {
+        $('div.CV-content').addClass('active');
+      }
+    });
+
+    $("#publications-link.publications-toggle").on('click', function () {
+      if ($('div.CV-content').hasClass('active')) {
+        $('div.CV-content').slideToggle(800);
+        $('div.CV-content').removeClass('active');
+      }
+        $('div.publications-content').slideToggle(1000);
+      $('html, body').animate({scrollTop:$("#publications-link").offset().top+4}, 1000);
+        if ($('div.publications-content').hasClass('active')) {
+        $('div.publications-content').removeClass('active');
+      } else {
+        $('div.publications-content').addClass('active');
+      }
+    });
+  </script>
 
 </body>
 </html>
