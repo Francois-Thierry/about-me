@@ -14,15 +14,15 @@
 </head>
 <body>
 <div class="wrapper">
-
+<div class="header"></div>
 <!-- -------------------------------------------------------------------------------- -->
 <!-- -- ABOUT ME                                                                   -- -->
 <!-- -------------------------------------------------------------------------------- -->
 
-  <div class="row title">
+  <div class="row" id="title">
     <div class="column-12">
         <img src="photo.png">
-        <div id="title">        
+        <div class="title">        
           <h1>François Thierry</h1>
           <i>MEng - MSc - PhD</i>
         </div>
@@ -31,7 +31,7 @@
 
 
   <div class="row">
-    <div class="column-12">
+    <div class="column-12 EN">
 
       <p>
       Diplomaed with a PhD in nano-optoelectronics, I am currently searching for a career opportunity between physics and computer science. I am curious and I like to experiment with code to answer my questions. This is why I am really interested in physical modeling and data visualization.
@@ -45,154 +45,246 @@
       <a href="mailto:francois.thierry.github@gmail.com">email</a>.</p>
       
     </div>
+    <div class="column-12 FR">
+
+      <p>
+      Diplômé d'un doctorat en nano-optoélectronique, je suis actuellement à la recherche d'une opportunité de carrière entre science et informatique. Je suis curieux et j'aime programmer pour résoudre ou visualiser mes interrogations. Je suis particulièrement intéressé par la modélisation de phénomènes physique et la visualisation de données.
+      </p>
+
+      <p>
+      J'ai récemment commencé à regrouper mes expériences de programmation sur github et je vous invite à visiter le <a href="https://francois-thierry.github.io">site de mes projets</a>. Mes languages de programmation de prédilection sont Python et les technologies web (HTML/CSS/JS) mais je connais aussi Matlab, le C/C++ et j'ai déjà utilisé des logiciels de CAO tels que Autodesk Inventor.
+      </p>
+
+      <p>
+      Si vous voulez en savoir plus sur ma formation et mes activités de recherche, vous pouvez consulter mon CV ou la liste de mes publications. Pour me contacter, envoyer moi un <a href="mailto:francois.thierry.github@gmail.com">email</a>.
+      </p>
+      
+    </div>
 
   </div>
+</div>
 
 
 <!-- -------------------------------------------------------------------------------- -->
 <!-- -- CURRICULUM VITAE                                                           -- -->
 <!-- -------------------------------------------------------------------------------- -->
-<div class="row accordions">
-  <div class="column-12">
 
+<div class="row">
+
+    <div class="wrapper column-12" style="text-align:left;">
     <a id="CV-link" class="box-toggle fl" href="#CV-link">
       <h2>Curriculum Vitae</h2>
     </a>
 
   <div class="CV-content">
-    <div id="CV-separator" class="line-separator"></div>
+    <div id="CV-separator" class="line-separator" style="margin-bottom:0;margin-top:1em;"></div>
   </div>
+</div>
 
-  <div id="cd-timeline" class="CV-content">
+  <div id="cd-timeline" class="wrapper column-12 CV-content">
 
     <div class="cd-timeline-block">
-      <div class="cd-timeline-img PhD">
-        <!-- <img src="img/cd-icon-movie.svg" alt="Movie"> -->
-      </div> <!-- cd-timeline-img -->
-
-      <div class="cd-timeline-content PhD" style="border:2px solid #C03B44;">
+      <div class="cd-timeline-img PhD"></div>
+      <div class="cd-timeline-content PhD EN" style="border:2px solid #C03B44;">
         <span class="cd-date">2012 - 2015</span>
         <h2>Doctoral Thesis</h2>
-        <p>I obtained a governmental grant with teaching position at the Aix-Marseille University in France. I conducted my PhD research at the Materials, Microelectronics and Nanosciences
-Institute of Provence (IM2NP) in the Optoelectronics and Photovoltaics (OPTOPV) Team under the supervision of Pr. F. Flory and Dr. J. Le Rouzo. 
-<br>
-The main goals of my research were to calculate the unique properties of quantum nanostructures and to study the optical properties of hybrid organic-inorganic thin-films. I defended on <b>December 14th 2015</b> with the title <b>Study of semiconductor nanoparticles properties for hybrid solar cells</b>. </p>
-      </div> <!-- cd-timeline-content -->
-    </div> <!-- cd-timeline-block -->
+        <p>I obtained a governmental grant with teaching position at the Aix-Marseille University in France. I conducted my PhD research at the <a href="http://www.im2np.fr/english/index.html">Materials, Microelectronics and Nanosciences Institute of Provence (IM2NP)</a> in the Optoelectronics and Photovoltaics (OPTOPV) Team. 
+        <br><br>
+        The main goals of my research were to calculate the unique properties of quantum nanostructures and to study the optical properties of hybrid organic-inorganic thin-films. I defended on December 14th 2015 with the title <b>Study of semiconductor nanoparticles properties for hybrid solar cells</b>. </p>
+      </div>
+      <div class="cd-timeline-content PhD FR" style="border:2px solid #C03B44;">
+        <span class="cd-date">2012 - 2015</span>
+        <h2>Thèse de Doctorat</h2>
+        <p>J'ai obtenu une bourse gouvernementale (MESR) avec mission d'enseignement (CME) à l'université d'Aix-Marseille. J'ai mené mes travaux de recherche au sein de <a href="http://www.im2np.fr/">l'Institut Matériaux Microélectronique Nanosciences de Provence (IM2NP)</a> dans <a href="http://www.im2np.fr/recherche/equipes/optopv.html">l'équipe Optoélectronique et Photovoltaïque (OPTO-PV)</a>.
+        <br><br>
+        Lors de ma thèse j'ai principalement calculé les propriétés particulières des nanostructures quantiques et étudié les propriétés optiques des couches minces hybrides organique-(nano)inorganique. J'ai soutenu le 14 décembre 2015 avec pour titre <b>Etude des propriétés des nanoparticules semiconductrices pour les cellules solaires hybrides</b>.
+        </p>
+      </div> 
+    </div>
 
     <div class="cd-timeline-block">
       <div class="cd-timeline-img Master"></div>
-      <div class="cd-timeline-content Master" style="border:2px solid #F0CA45;">
+      <div class="cd-timeline-content Master EN" style="border:2px solid #F0CA45;">
         <span class="cd-date">2009 - 2012</span>
         <h2>Master of Engineering & Master of Science</h2>
         <p>
           In fall 2009, I started a <a href="http://www.utt.fr/en/education/engineering-degree/materials-science-and-technology.html">Master of Engineering in Material Science and Technology</a> at the <a href="http://www.utt.fr/en/index.html">University of Technology of Troyes (UTT)</a>. 
           <br><br>
-          For this formation I spent 6 months in 2010 conducting an R&D Internship with the title <i>Characterization and Optimization of a Novel All Electronic Terahertz System</i> at the <a href="http://www.ipm.fraunhofer.de/en.html">Fraunhofer Institute for Physical Measurement Techniques (IPM)</a>. The goal of the project was to use and optimize the new non-destructive THz imaging system, but I also developed an hyperspectral image processing software using Matlab.
+          For this formation I spent 6 months in 2010 conducting an R&D Internship  at the <a href="http://www.ipm.fraunhofer.de/en.html">Fraunhöfer Institute for Physical Measurement Techniques (IPM)</a>. The goal of the project was to use and optimize the new non-destructive THz imaging system, but I also developed an hyperspectral image processing software using Matlab.
           <br><br>
-          In 2011 I followed simultaneously the Master of Science in Optics and Nanotechnology in the course of a double diploma from the UTT.
+          In 2011 I followed simultaneously the <a href="http://www.utt.fr/en/education/master-of-science/optics-and-nanotechnology.html">Master of Science in Optics and Nanotechnology</a> in the course of a double diploma from the UTT.
           <br><br>
-          In 2012, to conclude my Master Degrees, I went to Innsbrück Unniversity in Austria for a 6 months Research Internship where I performed slit experiments with single photon sources (non-linear crystal and quantum dots) in order to test Born's law.
+          In 2012, to conclude my Master Degrees, I went to the <a href="https://www.uibk.ac.at/exphys/photonik/">Photonics Group at the Innsbrück Unniversity</a> in Austria for a 6 months Research Internship where I performed slits quantum experiments with single photon sources (non-linear crystal and quantum dots) in order to test Born's law.
+        </p>
+      </div>
+      <div class="cd-timeline-content Master FR" style="border:2px solid #F0CA45;">
+        <span class="cd-date">2009 - 2012</span>
+        <h2>Diplôme d'Ingénieur & Master</h2>
+        <p>
+          A la rentrée 2009, j'ai intégré la branche <a href="http://www.utt.fr/fr/formation/formations-d-ingenieur/materiaux---technologie-et-economie.html">Matériaux: Technologie et Economie (MTE)</a> de <a href="http://www.utt.fr/fr/index.html">l'Université de Technologie de Troyes (UTT)</a>.
+          <br><br>
+          Au cours de cette formation j'ai passé 6 mois en 2010 en stage R&D à <a href="http://www.ipm.fraunhofer.de/en.html">l'Institut Fraunhöfer des Mesures Techniques (IPM)</a> en Allemagne. Pour ce projet j'ai testé et optimisé un nouveau système THz de mesures non-destructives. J'ai également développé un logiciel de traitement d'image hyperspectrale avec Matlab pour visualiser les mesures.
+          <br><br>
+          En 2011 j'ai eu l'opportunité de suivre le master <a href="http://www.utt.fr/fr/formation/master-en-sciences--technologies---sante/specialite-ont.html">Optique et Nanotechnologies (ONT)</a> en parallèle de mon cursus Ingénieur dans le cadre d'un double-diplôme de l'UTT.
+          <br><br>
+          Pour conclure mes Masters j'ai réalisé un stage de recherche d'un semestre dans <a href="https://www.uibk.ac.at/exphys/photonik/">l'Equipe Photonique de l'université d'Innsbrück</a> en Autriche. J'y ai réalisé des expériences quantiques de fentes avec des sources de photon unique (une que j'ai construite avec un cristal non-linéaire et une boîte quantique isolé). Ces expériences permettaient de tester la limite de validité de la loi de Born.
         </p>
       </div>
     </div>
 
     <div class="cd-timeline-block">
       <div class="cd-timeline-img DUT"></div>
-      <div class="cd-timeline-content DUT" style="border:2px solid #75CE66;">
+      <div class="cd-timeline-content DUT EN" style="border:2px solid #75CE66;">
         <span class="cd-date">2007 - 2009</span>
         <h2>DUT (Technology Degree)</h2>
         <p>
-          I spent two years preparing my technical degree and I went to the LERM.
+          I spent two years preparing my technical degree in Material Science at the <a href="http://international.univ-tours.fr/admissions-courses/university-institute-of-technology--276378.kjsp?RH=1324238796427">IUT in Blois</a> and I went to the <a href="http://en.lerm.fr/lerm-company-evidences-of-time-lerm.html">LERM</a> to conduct my diploma internship (3 months) where I studied durability indicators in concrete and characterized a new test method based on water permeability.
+        </p>
+      </div>
+      <div class="cd-timeline-content DUT FR" style="border:2px solid #75CE66;">
+        <span class="cd-date">2007 - 2009</span>
+        <h2>DUT</h2>
+        <p>
+          J'ai suivi le cursus de <a href="http://iut-blois.univ-tours.fr/formations/science-et-genie-des-materiaux-92466.kjsp">Science et Génie des Matériaux (SGM) de l'IUT de Blois</a>. J'ai mené mon stage de fin d'étude au <a href="http://www.lerm.fr/lerm-les-preuves-du-temps.html">LERM</a> en Arles où j'ai étudié les indicateurs de durabilité du béton et testé une nouvelle mesure basée sur la perméabilité à l'eau.
         </p>
       </div>
     </div>
 
     <div class="cd-timeline-block">
       <div class="cd-timeline-img until-highschool"></div>
-      <div class="cd-timeline-content until-highschool" style="border:2px solid #03A9F4;">
+      <div class="cd-timeline-content until-highschool EN" style="border:2px solid #03A9F4;">
         <span class="cd-date">1990 - 2007</span>
         <h2>Until High-School Graduation</h2>
         <p>
-          I spent my childhood in the Alps before going to Orléans in the center of France where I went to school. In high-school I integrated a European class with a major in German. I learned German and I also had the opportunity to travel for several months in Germany.
+          In high-school I integrated a European class with a major in German. I learned German and I also had the opportunity to travel for several months in Germany. I took the scientific speciality for my degree.
+        </p>
+      </div>
+      <div class="cd-timeline-content until-highschool FR" style="border:2px solid #03A9F4;">
+        <span class="cd-date">2004 - 2007</span>
+        <h2>Lycée</h2>
+        <p>
+          J'ai préparé un bac S option mathématiques dans une section européenne allemand.
+          J'ai ainsi pu partir plusieurs mois en Allemagne dans le cadre d'échanges entre lycées.
         </p>
       </div>
     </div> 
 
   </div>
+</div>
+<div class="wrapper column-12" style="text-align:left;">
 
-    <div class="CV-content"><div class="line-separator"></div></div>
+    <div class="CV-content"><div class="line-separator" style="margin-bottom:1em;margin-top:0;"></div></div>
 
 
 <!-- -------------------------------------------------------------------------------- -->
 <!-- -- PUBLICATIONS                                                               -- -->
 <!-- -------------------------------------------------------------------------------- -->
 
-
     <a id="publications-link" class="publications-toggle fl" href="#publications-link">
       <h2>Publications</h2>
     </a>
 
     <div class="publications-content">
-      <div id="publications-separator" class="line-separator"></div>
-        <p>          
+
+      <div id="publications-separator" class="line-separator" style="margin-bottom:1em;margin-top:1em;"></div>
+
+      <p class="EN" style="margin-bottom:0.5em;">          
         You can also consult my <a href="https://www.researchgate.net/profile/Francois_Thierry">ResearchGate profile</a>.
-        </p>
+      </p>
+      <p class="FR" style="margin-bottom:0.5em;">          
+        Vous pouvez également consulter mon <a href="https://www.researchgate.net/profile/Francois_Thierry">profil ResearchGate</a>.
+      </p>
 
-
-
-      <p>
+      <div class="row">         
         <h3>Journal articles</h3>
-        <p class="reference">
-          1. <b>F. Thierry</b>, J. Le Rouzo, F. Flory, G. Berginc and L. Escoubas, <i>Fast and reliable approach to calculate energy levels in semiconductor nanostructures</i>, Journal of Nanophotonics, vol. 9, no.1, 2015. [<a href="http://dx.doi.org/10.1117/1.JNP.9.093080">DOI</a>|<a href="publications/article-ThierryJNP2015.pdf">PDF</a>]
-        </p>
-        <p class="reference">
-          2. A. Bou, P. Torchio, D. Barakel, <b>F. Thierry</b>, A. Sangar, P-Y. Thoulon and M. Ricci, <i>Indium tin oxide-free transparent and conductive electrode based on SnOx | Ag | SnOx for organic solar cells</i>, Journal of Applied Physics, vol. 116, 2014. [<a href="http://dx.doi.org/10.1063/1.4886225">DOI</a>|<a href="publications/article-BouJAP2014.pdf">PDF</a>]
-        </p>
-      </p>
-      <p>
-        <h3>Conference papers</h3>
-        <p class="reference">
-          1. J. Le Rouzo, D. Duché, C.M. Ruiz, <b>F. Thierry</b>, M. Carlberg, G. Berginc, M. Pasquinelli, J.J. Simon, L. Escoubas and F. Flory, <i>Characterization and modeling tools for light management in heterogeneous thin film layers</i>, Proceedings of SPIE - The International Society for Optical Engineering, San Diego, United States, 2016. [<a href="http://dx.doi.org/10.1117/12.2237682">DOI</a>|<a href="publications/conference-LeRouzoSPIE2016.pdf">PDF</a>]
-        </p>
-        <p class="reference">
-          2. <b>F. Thierry</b>, J. Le Rouzo, F. Flory, G. Berginc and L. Escoubas, <i>Optimization of the optical properties of nanostructures through fast numerical approaches</i>, Proceedings of SPIE - The International Society for Optical Engineering, San Diego, United States, 2014. [<a href="http://dx.doi.org/10.1117/12.2061042">DOI</a>|<a href="publications/conference-ThierrySPIE2014.pdf">PDF</a>] - <b>Newport Excellence in Research Award</b>
-        </p>
-        <p class="reference">
-          3. A. Bou, P. Torchio, D. Barakel, <b>F. Thierry</b>, P-Y. Thoulon and M. Ricci, <i>Numerical and experimental study of SnOx | Ag | SnOx multilayer as indium-free transparent electrode for organic solar cells</i>, Proceedings of SPIE - The International Society for Optical Engineering, San Francisco, United States, 2014. [<a href="http://dx.doi.org/10.1117/12.2039067">DOI</a>|<a href="publications/conference-BouSPIE2014.pdf">PDF</a>]
-        </p>
-      </p>
-      <p>
-        <h3>Posters</h3>
-        <p class="reference">
-          1. <b>F. Thierry</b>, J. Le Rouzo, F. Flory, G. Berginc and L. Escoubas, <i>Choice of Quantum Dots for Hybrid Solar Cells</i>, Journées des doctorants ED353, Marseille, France, 2015. [<a href="publications/poster-ThierryED2015.pdf">PDF</a>]
-        </p>
-        <p class="reference">
-          2. <b>F. Thierry</b>, J. Le Rouzo, F. Flory, G. Berginc and L. Escoubas, <i>Optimization of Solar Cells Efficiency, A Quantum Perspective</i>, PVTC - Photovoltaic Technical Conference, Aix-en-Provence, France, 2014. [<a href="publications/poster-ThierryPVTC2014.pdf">PDF</a>] - <b>Best Poster Award</b> (@ Journées de l'IM2NP, 2014, Cassis, France)
-        </p>
-      </p>
-      <p>
-        <h3>Thesis</h3>
-        <p class="reference">
-          1. <b>F. Thierry</b>, <i>Etude des Propriétés de Nanoparticules Semiconductrices pour les
-          Cellules Solaires Hybrides</i>, PhD Thesis, 2015. [<a href="publications/thesis-PhD.pdf">PDF</a>] - FRENCH
-        </p>
-        <p class="reference">
-            2. <b>F. Thierry</b>, <i>Foundations of Quantum Mechanics with Single
-          Photons from Quantum Dots</i>, Master Thesis, 2012. [<a href="publications/thesis-Master.pdf">PDF</a>]
-        </p>
-      </p>
-      <br>
-    </div>
-        <div class="publications-content">
-          <div id="publications-separator"class="line-separator"></div>
+        <div class="bibentry">
+          <p style="margin-right:0.5em;">1.</p>
+            <p>
+              <b>F. Thierry</b>, J. Le Rouzo, F. Flory, G. Berginc and L. Escoubas, <i>Fast and reliable approach to calculate energy levels in semiconductor nanostructures</i>, Journal of Nanophotonics, vol. 9, no.1, 2015. [<a href="http://dx.doi.org/10.1117/1.JNP.9.093080">DOI</a>|<a href="publications/article-ThierryJNP2015.pdf">PDF</a>]
+            </p>
         </div>
-      
-
+        <div class="bibentry">
+          <p style="margin-right:0.5em;">2.</p>
+          <p>
+            A. Bou, P. Torchio, D. Barakel, <b>F. Thierry</b>, A. Sangar, P-Y. Thoulon and M. Ricci, <i>Indium tin oxide-free transparent and conductive electrode based on SnOx | Ag | SnOx for organic solar cells</i>, Journal of Applied Physics, vol. 116, 2014. [<a href="http://dx.doi.org/10.1063/1.4886225">DOI</a>|<a href="publications/article-BouJAP2014.pdf">PDF</a>]
+          </p>
+        </div>
       </div>
+
+      <div class="row">        
+        <h3>Conference papers</h3>
+        <div class="bibentry">
+          <p style="margin-right:0.5em;">1.</p>
+          <p>
+            J. Le Rouzo, D. Duché, C.M. Ruiz, <b>F. Thierry</b>, M. Carlberg, G. Berginc, M. Pasquinelli, J.J. Simon, L. Escoubas and F. Flory, <i>Characterization and modeling tools for light management in heterogeneous thin film layers</i>, Proceedings of SPIE - The International Society for Optical Engineering, San Diego, United States, 2016. [<a href="http://dx.doi.org/10.1117/12.2237682">DOI</a>|<a href="publications/conference-LeRouzoSPIE2016.pdf">PDF</a>]
+          </p>
+        </div>
+        <div class="bibentry">
+          <p style="margin-right:0.5em;">2.</p>
+          <p>
+            <b>F. Thierry</b>, J. Le Rouzo, F. Flory, G. Berginc and L. Escoubas, <i>Optimization of the optical properties of nanostructures through fast numerical approaches</i>, Proceedings of SPIE - The International Society for Optical Engineering, San Diego, United States, 2014. [<a href="http://dx.doi.org/10.1117/12.2061042">DOI</a>|<a href="publications/conference-ThierrySPIE2014.pdf">PDF</a>] - <b>Newport Excellence in Research Award</b>
+          </p>
+        </div>
+        <div class="bibentry">
+          <p style="margin-right:0.5em;">3.</p>
+          <p>
+            A. Bou, P. Torchio, D. Barakel, <b>F. Thierry</b>, P-Y. Thoulon and M. Ricci, <i>Numerical and experimental study of SnOx | Ag | SnOx multilayer as indium-free transparent electrode for organic solar cells</i>, Proceedings of SPIE - The International Society for Optical Engineering, San Francisco, United States, 2014. [<a href="http://dx.doi.org/10.1117/12.2039067">DOI</a>|<a href="publications/conference-BouSPIE2014.pdf">PDF</a>]
+          </p>
+        </div>
+      </div>
+
+      <div class="row">        
+        <h3>Posters</h3>
+        <div class="bibentry">
+          <p style="margin-right:0.5em;">1.</p>
+          <p>
+            <b>F. Thierry</b>, J. Le Rouzo, F. Flory, G. Berginc and L. Escoubas, <i>Choice of Quantum Dots for Hybrid Solar Cells</i>, Journées des doctorants ED353, Marseille, France, 2015. [<a href="publications/poster-ThierryED2015.pdf">PDF</a>]
+          </p>
+        </div>
+        <div class="bibentry">
+          <p style="margin-right:0.5em;">2.</p>
+          <p>
+            <b>F. Thierry</b>, J. Le Rouzo, F. Flory, G. Berginc and L. Escoubas, <i>Optimization of Solar Cells Efficiency, A Quantum Perspective</i>, PVTC - Photovoltaic Technical Conference, Aix-en-Provence, France, 2014. [<a href="publications/poster-ThierryPVTC2014.pdf">PDF</a>] - <b>Best Poster Award</b> (@ Journées de l'IM2NP, 2014, Cassis, France)
+          </p>
+        </div>
+      </div>
+
+      <div class="row">        
+        <h3>Thesis</h3>
+        <div class="bibentry">
+          <p style="margin-right:0.5em;">1.</p>
+          <p>
+            <b>F. Thierry</b>, <i>Etude des Propriétés de Nanoparticules Semiconductrices pour les Cellules Solaires Hybrides</i>, PhD Thesis, 2015. [<a href="publications/thesis-PhD.pdf">PDF</a>] - FRENCH
+          </p>
+        </div>
+        <div class="bibentry">
+          <p style="margin-right:0.5em;">2.</p>
+          <p>
+            <b>F. Thierry</b>, <i>Foundations of Quantum Mechanics with Single Photons from Quantum Dots</i>, Master Thesis, 2012. [<a href="publications/thesis-Master.pdf">PDF</a>]
+          </p>
+        </div>
+      </div>
+      <p>
+
+        <div id="publications-separator" class="line-separator" style="margin-top:1em; margin-bottom:0;"></div>
+      </div>
+
+    </div>
   
     </div>
+  <div class="footer"></div>
 </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="../assets/main.js"></script>
   <script type="text/javascript">
   
     $("#CV-link.box-toggle").on('click', function () {

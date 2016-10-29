@@ -3,11 +3,13 @@
 /*                                                                    Title  */
 /*///////////////////////////////////////////////////////////////////////////*/
 
-img {
+#title img {
    max-width: 150px;
+
    display: block;
    margin: 0 auto;
-   padding: 0;
+   margin-top: 0.5em;
+   margin-bottom: 1.5em;
 
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4);
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.4);
@@ -21,24 +23,19 @@ img {
 #title {
   /*float: left;*/
   background-color: none;
+  margin-top: 0.1em;
   text-align: center;
-  margin-top: 1em;
 }
 
 .title {
-  margin-top: 1em;
+  text-align: center;
 }
-
 .title h1 {
-  margin-bottom: 0.5em;
+  margin-bottom: .2em;
 }
 
 h2 {
-  padding: 0.5em 0;
-}
-
-.accordions {
-  margin-bottom: 3em;
+  padding: 0;
 }
 
 a, i, b {
@@ -87,24 +84,24 @@ a, i, b {
 }
 
 h3 {
-    margin-top: 0;
-    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin: 0.5em auto;
 }
 
-.reference {
-    /*font-size: 0.8em;*/
-    text-align: left;
-}
 
 /*///////////////////////////////////////////////////////////////////////////*/
 /*                                                         Curriculum Vitae  */
 /*///////////////////////////////////////////////////////////////////////////*/
+.CV-content.row p {
+  font-size: 0.8em;
+}
 
 #cd-timeline {
   position: relative;
   padding: 1em 0;
-  margin-top: 1em;
-  margin-bottom: 1em;
+/*  margin-top: 1em;
+  margin-bottom: 1em;*/
 }
 #cd-timeline::before {
   /* this is the vertical line */
@@ -166,6 +163,11 @@ h3 {
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 3px 4px 0 #d7e4ed;
+  text-align: left;
+}
+.cd-timeline-content h2 {
+  margin: 1em auto;
+  font-size: 1em;
 }
 .cd-timeline-content > * {
   background: white;
@@ -190,18 +192,19 @@ h3 {
 /*///////////////////////////////////////////////////////////////////////////*/
 
 @media (min-width:481px) {
-  .title {
-    margin-top: 3em;
-    margin-bottom: 2em;
+
+  .CV-content {
+    /*width: 90%;*/
+    margin: 0 auto;
   }
-  #title {
-    /*margin-top: 3em;*/
-    margin-bottom: 2em;
-  }
+
 }
 
-@media (min-width:641px) { 
-  img {
+@media (min-width:641px) {
+  #title {
+    padding-bottom: 1.5em;
+  }
+  #title img {
     float: left;
     display: inline;
     vertical-align:bottom;
@@ -210,21 +213,20 @@ h3 {
     -moz-border-radius: 6px;
     border-radius: 6px;
   }
-  .title h1 {
-    margin-bottom: 0.5em;
-  }
-  #title {
+  .title {
     float: left;
     text-align: left;
+    margin-top: 3em;
     margin-left: 2em;
-/*    margin-bottom: 1em;
-    margin-top: 4em;*/
   }
+
   #cd-timeline::before {
     display: block;
+    z-index: 1;
   }
   .cd-timeline-img {
     display: block;
+    z-index: 2;
   }
   .cd-timeline-content::before {
     content: '';
@@ -238,27 +240,22 @@ h3 {
   }
   .cd-timeline-content {
     margin-left: 60px;
+    padding-bottom: 0;
   }
-  i {
+/*  i {
     font-size: 1em;
     background: transparent;
-  }
+  }*/
 }
 
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-/*    font-size: 20px;
-    font-size: 1.25rem;*/
     font-size: 1.25em;
   }
   .cd-timeline-content p {
-    /*font-size: 16px;*/
-    /*font-size: 1rem;*/
     font-size: 1em;
   }
   .cd-timeline-content .cd-date {
-/*    font-size: 14px;
-    font-size: 0.875rem;*/
     font-size: 0.8em;
   }
 }
@@ -281,15 +278,14 @@ h3 {
 
 
 @media only screen and (min-width: 1170px) {
-
-  .title {
-    margin-bottom: 2em;
-    margin-top: 4em;
+  .cd-timeline-content h2 {
+    font-size: 1.5em;
   }
+/*
   #cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
-  }
+  }*/
   #cd-timeline::before {
     left: 50%;
     margin-left: -2px;
@@ -307,13 +303,13 @@ h3 {
   
   .cd-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
+    padding: 0 1em;
     width: 45%;
   }
   .cd-timeline-content::before {
     top: 24px;
-    left: 100.5%;
-    border-color: transparent;
+    left: 100%;
+    /*border-color: transparent;*/
     /*border-left-color: white;*/
   }
   .cd-timeline-content .cd-date {
@@ -326,8 +322,14 @@ h3 {
     font-size: 1em;
   }
 
+  #cd-timeline {
+    max-width: 80%;
+  }
+
   .cd-timeline-block {
-    margin: 4em 0;
+    /*max-width: 80%;*/
+    margin: 0 auto;
+    margin-bottom: 1em; 
   }
   .cd-timeline-block:first-child {
     margin-top: 0;
@@ -341,7 +343,7 @@ h3 {
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
     left: auto;
-    right: 100.5%;
+    right: 100%;
     /*border-color: transparent;*/
     /*border-right-color: white;*/
   }
@@ -363,5 +365,34 @@ h3 {
   }
   .cd-timeline-content.until-highschool::before {
     border-right: 7px solid #03A9F4;
+  }
+  .bibentry {
+    font-size: 1.1em;
+  }
+}
+
+.bibentry {
+    font-size: 0.8em;
+    padding-bottom: 0.6em;
+  }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) { 
+  .bibentry {
+    font-size: 0.9em;
+  }
+  .bibentry {
+    font-size: 1em;
+  }
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) { 
+  .bibentry p,
+  .bibentry b,
+  .bibentry i {
+    font-size: 1em;
   }
 }
