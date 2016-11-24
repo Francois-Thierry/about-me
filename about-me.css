@@ -42,59 +42,50 @@ a, i, b {
   background: transparent;
 }
 
-/*///////////////////////////////////////////////////////////////////////////*/
-/*                                                  Animated Line Separator  */
-/*///////////////////////////////////////////////////////////////////////////*/
-
-/*https://css-tricks.com/animate-to-an-inline-style/*/
-
-.line-separator{
-  height:3px;
-  background:#323d55;
-  border-top:1px solid #c0c0c0;
-  border-bottom:1px solid #c0c0c0;
-  float: left;
-  width: 100%;
-  margin-bottom: 0.5em;
-  line-height: 0.2em;
-}
-
-@-webkit-keyframes progress-bar {
-   0% { width: 0; }
-}
-@-moz-keyframes progress-bar {
-   0% { width: 0; }
-}
-@keyframes progress-bar {
-   0% { width: 0; }
-}
-
-.progress-bar > div { 
-  -webkit-animation: progress-bar 1s;
-  -moz-animation: progress-bar 1s;
-  animation: progress-bar 1s;
-}
 
 /*///////////////////////////////////////////////////////////////////////////*/
 /*                                                             Bibliography  */
 /*///////////////////////////////////////////////////////////////////////////*/
 
+#publications-link {
+  cursor: pointer;
+}
+
 .CV-content, .publications-content {
   display: none;
 }
 
-h3 {
+.CV-content h3 {
     padding-top: 1em;
     padding-bottom: 0.5em;
     margin: 0.5em auto;
 }
 
+.bibentry {
+    font-size: 0.8em;
+}
+.bibentry i {
+    font-size: 1em;
+}
+
+.bibentry {
+  padding-bottom: 0.5em;
+}
 
 /*///////////////////////////////////////////////////////////////////////////*/
 /*                                                         Curriculum Vitae  */
 /*///////////////////////////////////////////////////////////////////////////*/
+
+#CV-link h2 {
+  cursor: pointer;
+}
+
 .CV-content.row p {
   font-size: 0.8em;
+}
+
+[class*="column-"] p:last-child {
+  margin-bottom: 1.2em;
 }
 
 #cd-timeline {
@@ -366,33 +357,24 @@ h3 {
   .cd-timeline-content.until-highschool::before {
     border-right: 7px solid #03A9F4;
   }
-  .bibentry {
-    font-size: 1.1em;
-  }
+
 }
 
-.bibentry {
-    font-size: 0.8em;
-    padding-bottom: 0.6em;
-  }
-
 /* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px) { 
+@media only screen (min-width:320px) { 
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media only screen (min-width:481px) {
   .bibentry {
     font-size: 0.9em;
   }
-  .bibentry {
-    font-size: 1em;
-  }
-}
-/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:481px) {
 }
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:641px) { 
-  .bibentry p,
-  .bibentry b,
-  .bibentry i {
+@media only screen (min-width:641px) { 
+}
+
+@media only screen (min-width: 768px) {
+  .bibentry {
     font-size: 1em;
   }
 }

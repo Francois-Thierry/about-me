@@ -1,1 +1,6 @@
-assets/
+CV/*.aux
+CV/*.fls
+CV/*latexmk
+CV/*.log
+CV/*.out
+CV/*.gz
